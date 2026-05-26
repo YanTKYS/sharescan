@@ -1,0 +1,23 @@
+{
+  "targets": [
+    "\\\\server\\share"
+  ],
+  "outputDir": "output",
+  "largeFileThresholdMB": 100,
+  "longPathThreshold": 240,
+  "oldFileYears": 5,
+  "enableHashDuplicateCheck": true,
+  "maxRowsInHtml": 100,
+  "excludeDirectories": [
+    ".git",
+    "node_modules",
+    "bin",
+    "obj",
+    "tmp",
+    "temp"
+  ],
+  "excludeExtensions": [
+    ".tmp",
+    ".bak"
+  ]
+}
