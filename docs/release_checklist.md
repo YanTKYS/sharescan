@@ -17,7 +17,11 @@
 ## 設定ファイル確認
 
 - [ ] `config.sample.json` が同梱されている
-- [ ] `LICENSE` が配布物（exe/ZIP）に同梱されている
+- [ ] `LICENSE`（自作部分のMIT License）が配布物（exe/ZIP）に同梱されている
+- [ ] ビルドに使用したGoのライセンスが、自作の `LICENSE` とは別ファイルとして配布物（exe/ZIP）に同梱されている
+  - Goの標準ライブラリ・ランタイムはBSD系ライセンス（Copyright The Go Authors）で、バイナリ再配布時も著作権表示・条件・免責文の添付が必要
+  - 同梱するファイルは、ビルドに使用したGoのインストール先（`go env GOROOT` で確認）にある `LICENSE`。例: `LICENSE`（自作MIT）と `LICENSE-Go`（Goのライセンス）として並べて同梱し、自作MITに混ぜない
+  - 参考: <https://go.dev/LICENSE>
 - [ ] `sharescan.exe --config config.sample.json` が実行できる（targets修正後）
 - [ ] 設定ファイルが存在しない場合にエラーメッセージが表示される
 - [ ] 不正なJSONを指定した場合にエラーメッセージが表示される
@@ -91,4 +95,4 @@
 - [ ] `docs/test_scenarios.md` が存在する
 - [ ] `docs/operation_handover.md` が存在する
 - [ ] `config.sample.json` が存在する
-- [ ] `LICENSE`（MIT License）が存在し、`README.md` のライセンス節と整合している
+- [ ] `LICENSE`（MIT License）が存在し、`README.md` のライセンス節（ソースとビルド済みバイナリの区別を含む）と整合している
