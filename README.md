@@ -152,7 +152,15 @@ go test ./...
 
 ## ライセンス
 
-MIT License（または各組織のポリシーに従って適用してください）
+本リポジトリの自作部分（`sharescan` のソースコード、`config.sample.json`、`docs/` 配下の文書、本READMEを含む）は、[MIT License](LICENSE) の下で提供されます。
+
+Copyright (c) 2026 YanTKYS
+
+- 利用・改変・再配布の際は、[LICENSE](LICENSE) の著作権表示と許諾文を含めてください。
+- **ソースリポジトリ**: 本ツールは外部モジュールに依存せず（`go.mod` に依存なし）、リポジトリには第三者のコード・ライブラリ・素材・データを含みません。MIT License の適用範囲外となるものは、リポジトリ内には現時点でありません。
+- **ビルド済みの `sharescan.exe` / ZIP**: `go build` で生成した実行ファイルには、Go の標準ライブラリ・ランタイムが含まれます。これらは Go の BSD 系ライセンス（Copyright The Go Authors。<https://go.dev/LICENSE>）の下で提供されており、バイナリ再配布時も著作権表示・条件・免責文の添付が必要です。この部分は自作の MIT License の対象ではなく、Go のライセンスが適用されます。
+- `sharescan.exe` やZIPを配布する場合は、自作部分の [LICENSE](LICENSE) と、ビルドに使用した Go のライセンス（Go のインストール先にある `LICENSE`）の両方を同梱してください。手順は [docs/release_checklist.md](docs/release_checklist.md) を参照してください。
+- 今後、第三者のコード・資料・素材等を追加する場合は、それぞれ元のライセンスと通知を維持し、適用範囲を本節に明記してください。
 
 ---
 
