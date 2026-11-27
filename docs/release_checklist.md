@@ -17,6 +17,7 @@
 ## 設定ファイル確認
 
 - [ ] `config.sample.json` が同梱されている
+- [ ] `LICENSE` が配布物（exe/ZIP）に同梱されている
 - [ ] `sharescan.exe --config config.sample.json` が実行できる（targets修正後）
 - [ ] 設定ファイルが存在しない場合にエラーメッセージが表示される
 - [ ] 不正なJSONを指定した場合にエラーメッセージが表示される
@@ -90,3 +91,4 @@
 - [ ] `docs/test_scenarios.md` が存在する
 - [ ] `docs/operation_handover.md` が存在する
 - [ ] `config.sample.json` が存在する
+- [ ] `LICENSE`（MIT License）が存在し、`README.md` のライセンス節と整合している
